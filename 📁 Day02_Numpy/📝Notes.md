@@ -1,67 +1,121 @@
-📘 Day 2 Notes – NumPy Indexing & Filtering
-🧠 Topics Covered
-Indexing in 1D arrays
-Accessing elements in 2D arrays
-Accessing elements in 3D arrays
-Array slicing (positive indexing)
-Negative indexing
-Boolean masking (filtering)
-Manual filtering using loops
-📌 1. 1D Array Indexing
+# 📘 Day 2 Notes – NumPy Indexing & Filtering
 
-I learned that NumPy indexing in a 1D array works the same as Python lists. Indexing starts from 0, so the first element is at position 0, the second at position 1, and so on.
+## 🧠 Topics Covered
 
-📌 2. 2D Array Accessing
+- Indexing in 1D arrays
+- Accessing elements in 2D arrays
+- Accessing elements in 3D arrays
+- Array slicing (positive indexing)
+- Negative indexing
+- Boolean masking (filtering)
+- Manual filtering using loops
+- Even and odd filtering
+
+---
+
+## 📌 1. 1D Array Indexing
+
+NumPy indexing in a 1D array works the same as Python lists.
+
+- Indexing starts from `0`
+- The first element is at position `0`, the second at position `1`, and so on
+
+---
+
+## 📌 2. 2D Array Accessing
 
 A 2D array is like a matrix with rows and columns.
-I learned that the first index represents the row and the second index represents the column. This helps in selecting specific elements or entire rows from the array.
 
-📌 3. 3D Array Accessing
+- The **first index** represents the **row**
+- The **second index** represents the **column**
 
-A 3D array contains multiple 2D arrays.
-I learned that access happens in three steps: first selecting the matrix, then the row, and finally the column. This allows precise selection of elements inside multi-dimensional data.
+This helps in selecting specific elements or entire rows from the array.
 
-📌 4. Array Slicing (Positive Indexing)
+---
 
-I learned that slicing is used to select a range of elements from an array. It follows a structure of start, stop, and step.
+## 📌 3. 3D Array Accessing
 
-Start defines where selection begins
-Stop defines where it ends (not included)
-Step defines how many elements to skip
+A 3D array contains multiple 2D arrays. Access happens in three steps:
 
-I also learned that leaving values empty gives default behavior like starting from the beginning or going till the end.
+1. Select the matrix
+2. Select the row
+3. Select the column
 
-📌 5. Negative Indexing
+This allows precise selection of elements inside multi-dimensional data.
 
-Negative indexing is used to access elements from the end of the array.
+---
 
-The last element is represented by -1
-The second last by -2, and so on
+## 📌 4. Array Slicing (Positive Indexing)
 
-I also learned that slicing with negative indices helps select elements from the end portion of an array.
+Slicing is used to select a range of elements from an array. It follows the structure:
 
-📌 6. Boolean Masking (Filtering)
+```
+array[start : stop : step]
+```
 
-Boolean masking is a technique used to filter data using True and False values.
-I learned that only elements with True values are selected from the array, while False values are ignored. This is useful for conditional filtering.
+| Part    | Meaning                              |
+|---------|---------------------------------------|
+| `start` | Where selection begins                |
+| `stop`  | Where it ends (**not included**)      |
+| `step`  | How many elements to skip              |
 
-📌 7. Manual Filtering Using Loops
+> 💡 Leaving a value empty gives default behavior — e.g., starting from the beginning or going till the end.
 
-I learned how to manually filter arrays using loops by checking conditions one by one. Based on the condition, True or False values are stored in a list, which is then used to filter the original array.
+---
 
-📌 8. Even and Odd Filtering
+## 📌 5. Negative Indexing
 
-I also practiced filtering even numbers using a condition inside a loop. Only numbers that satisfy the condition are selected, while others are ignored.
+Negative indexing is used to access elements from the **end** of the array.
 
-🧠 Final Summary
+- `-1` → last element
+- `-2` → second-last element, and so on
+
+Slicing with negative indices also helps select elements from the end portion of an array.
+
+---
+
+## 📌 6. Boolean Masking (Filtering)
+
+Boolean masking filters data using `True`/`False` values.
+
+- Only elements with `True` values are selected
+- `False` values are ignored
+
+Useful for conditional filtering.
+
+---
+
+## 📌 7. Manual Filtering Using Loops
+
+Arrays can be filtered manually using loops:
+
+1. Check each condition one by one
+2. Store `True`/`False` in a list based on the condition
+3. Use that list to filter the original array
+
+---
+
+## 📌 8. Even and Odd Filtering
+
+Practiced filtering even numbers using a condition inside a loop:
+
+- Only numbers satisfying the condition are selected
+- Others are ignored
+
+---
+
+## 🧠 Final Summary
 
 Today I learned how NumPy allows:
 
-Easy element access in different dimensional arrays
-Powerful slicing techniques for selecting data
-Negative indexing for reverse access
-Efficient filtering using boolean masking
-Manual filtering using logical conditions
-🚀 Key Takeaway
+- ✅ Easy element access in different dimensional arrays
+- ✅ Powerful slicing techniques for selecting data
+- ✅ Negative indexing for reverse access
+- ✅ Efficient filtering using boolean masking
+- ✅ Manual filtering using logical conditions
 
-NumPy makes data selection and filtering extremely fast and simple compared to normal Python loops, especially when working with large datasets.
+---
+
+## 🚀 Key Takeaway
+
+> NumPy makes data selection and filtering **extremely fast and simple** compared to normal Python loops — especially when working with large datasets.
