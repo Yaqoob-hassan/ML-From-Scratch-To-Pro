@@ -28,7 +28,7 @@ No shortcuts. No skipping. Every concept built on top of the last.
 ## 🗺️ The Roadmap
 
 ```
-Phase 1 — Foundations          (Days 01–15)   ← You are here
+Phase 1 — Foundations          (Days 01–15)   ← We are here
 Phase 2 — Core ML Algorithms   (Days 16–35)
 Phase 3 — Advanced ML          (Days 36–55)
 Phase 4 — Deep Learning        (Days 56–80)
